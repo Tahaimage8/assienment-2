@@ -51,6 +51,9 @@ nav ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+.hambur{
+    display: none;
+}
     
 /* headder end  */
 
@@ -76,22 +79,30 @@ nav ul a {
     height: 25vh;
     margin-top: 1vh;
     align-items: center;
-    /* display: flex; */
-    /* text-align: center; */
 }
 .mic{
-     background: linear-gradient(to  right, #f0d749, #c55286,#e958d1 ,#7826c5);
-     height: 40vh;
-     width: 50vh;
-     text-align: center;
-     /* display: flex; */
-     /* align-items: center; */
-     padding-top: 9vh;
-     margin-bottom: 3vh;
-     border-radius: 100vh;
-     border: 5px solid t rgb(120, 38, 252);
+     /* background: linear-gradient(to  right, #f0d749, #c55286,#e958d1 ,#7826c5); */
+    background: url(../assets/hero-circle.png) no-repeat ;
+    height: 45vh;
+    width: 45vh;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.new-tag{
+    position: absolute;
+    top: 15%;
+    right: 41%;
+    background-color: #00FF88;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-size: 10px;
+    z-index: 3;
 
+}
 .main h1{
     
     font-size: 10vh;
@@ -375,7 +386,7 @@ color: #ffff;
     
 }
 .footer-social{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     gap: 40px;
     margin-bottom: 40px;
@@ -394,3 +405,42 @@ color: #ffff;
 .footer .footer-copy{
     color: #FAFAFA;
 }
+
+.footer .big{
+    font-size: 12vh;
+}
+
+
+#hidden{
+    display: none;
+}
+ /* rensponsive start  */
+ @media screen and (max-width:576px){
+
+   .header #sub,.header ul{
+    display: none;
+   }
+   
+   .hambur{
+   display: block;
+   left: 70%; */
+   margin: 0;
+   cursor: pointer;
+}
+.header {
+background-color: #1A0B2E;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: 3s;
+
+padding: 20px 5%;
+/* border-bottom: 1px  solid #412567; */ 
+}
+.header h2{
+ position: static;
+margin: 0;
+}
+
+ }
